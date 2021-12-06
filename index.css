@@ -1,0 +1,116 @@
+body {
+    font-family: 'sora';
+  }
+.navContainer{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+.logo{
+    float:left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 29px;
+
+    position: relative;
+}
+
+nav a{
+    color:#0073aa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+.hero-image{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(immigration.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero-title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    /*check to see if font weight needed*/
+    text-transform: uppercase;
+
+}
+
+.hero-title h1{
+    font-size: 72px;
+    /*check if letter spacing needed*/
+}
+
+hr{
+    height: 10px;
+    background-image: linear-gradient(to right, #0073aa, #347594);
+}
+
+.main-body{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.index-text{
+    padding:0 4em 0 4em;
+}
+.index-image{
+    padding-left: 2em ;
+
+    width:300px;
+    height: auto;
+}
