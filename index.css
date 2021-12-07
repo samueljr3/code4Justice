@@ -1,6 +1,11 @@
 body {
     font-family: 'sora';
   }
+  h2{
+      text-align: center;
+      
+  }
+  /*NAV bar code*/
 .navContainer{
     width: 80%;
     margin: 0 auto;
@@ -67,6 +72,7 @@ nav a:hover::before{
     width:100%;
 }
 
+/*Hero image code */
 .hero-image{
     position: relative;
     height: 500px;
@@ -96,10 +102,12 @@ nav a:hover::before{
 hr{
     height: 10px;
     background-image: linear-gradient(to right, #0073aa, #347594);
+    margin-bottom: 2em;
 }
 
+/*Body CSS*/
 .main-body{
-    padding-top: 2em;
+    padding-top: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,4 +121,46 @@ hr{
 
     width:300px;
     height: auto;
+}
+
+/*Footer CSS*/
+
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 3em;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #347594;
+}
+  
+footer ul li a:hover {
+    opacity: 50%;
+    color: #347594;
 }
