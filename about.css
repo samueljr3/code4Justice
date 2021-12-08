@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'sora';
+    background: white;
+}
+
+  /*NAV bar code*/
+  .navContainer{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+.logo{
+    float:left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 29px;
+
+    position: relative;
+}
+
+nav a{
+    color:#0073aa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+ 
+/* footer css */
+
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    padding: 20px;
+    text-decoration: none;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #347594;
+}
+  
+footer ul li a:hover {
+    opacity: 50%;
+    color: #347594;
+}
+
+  /* Meet the team section */
+
+section h2 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #0C4159;
+    margin: 15px;
+}
+
+section h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #889294;
+    margin: 20px;
+}
+
+.members {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #0C4159;
+    color: #347594;
+    width: auto;
+    height: 250px;
+}
+
+.members p {
+    margin: 10px 0px 0px 0px;
+}
+
+.members img {
+    width: 260px;
+    height: 180px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.about p{
+    padding: 18px;
+    text-align: center;
+    color: #0C4159;
+    margin: 0px 60px 0px 60px;
+}
+
+/* image */
+
+.image {
+    background: #0C4159;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    padding: 15px;
+    margin: 40px 0px 30px 0px;
+}
+
+.image p{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
