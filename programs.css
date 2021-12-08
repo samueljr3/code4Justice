@@ -1,6 +1,10 @@
-body{
-    background-color: #889294;
+*{
+    margin: 0;
+    padding: 0;
+
 }
+
+
 
 .navContainer{
     width: 80%;
