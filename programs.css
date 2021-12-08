@@ -2,3 +2,56 @@ body{
     background-color: #889294;
 }
 
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("https://cdn.britannica.com/57/102257-050-AD29F06D/Project-Literacy-adult-education-course-Watertown-Mass.jpg");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("https://www.brown.edu/sites/g/files/dprerj316/files/styles/wide_lrg/public/2019-07/education.jpg?h=8fda29ac&itok=oBowcOPR");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("https://ktla.com/wp-content/uploads/sites/4/2020/11/33757ee062f8444c9773f822e0afb72e.jpg?w=2560&h=1440&crop=1");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
