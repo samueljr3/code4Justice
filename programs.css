@@ -2,3 +2,122 @@ body{
     background-color: #889294;
 }
 
+.navContainer{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+.logo{
+    float:left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 29px;
+
+    position: relative;
+}
+
+nav a{
+    color:#0073aa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("https://cdn.britannica.com/57/102257-050-AD29F06D/Project-Literacy-adult-education-course-Watertown-Mass.jpg");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("https://www.brown.edu/sites/g/files/dprerj316/files/styles/wide_lrg/public/2019-07/education.jpg?h=8fda29ac&itok=oBowcOPR");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("https://ktla.com/wp-content/uploads/sites/4/2020/11/33757ee062f8444c9773f822e0afb72e.jpg?w=2560&h=1440&crop=1");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
