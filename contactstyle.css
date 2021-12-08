@@ -5,43 +5,88 @@ body{
     font-family: sans-serif;
 }
 /*Navigation Bar style*/ 
-.logo{
-    float: left;
-    padding-left: 100px;
-    padding-bottom: 20px
-}
-.main-nav{
-    display: inline-block;
-    text-align: right;
-    width: 100%;
-    vertical-align: middle;
+/*NAV bar code*/
+.navContainer{
+    width: 80%;
+    margin: 0;
+    padding: 0;
 }
 
-/* got rid of margin and padding in order to reset width of main nav*/
-.mian-nav__item{
-    padding: 0;
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+/*NAV bar code*/
+.navContainer{
+    width: 80%;
     margin: 0;
+    
+}
+
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+.logo{
+    float:left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.main-nav__item {
+nav li{
     display: inline-block;
-    margin: 0 16px;
+    margin-left: 70px;
+    padding-top: 29px;
+
+    position: relative;
 }
 
-.main-nav__item a{
+nav a{
+    color:#0073aa;
     text-decoration: none;
-    color: #347594;
-    font-weight: bold;
-    padding: 3px 0;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-/*pseduo class*/
-.main-nav__item a:hover, .main-nav__item a:active {
-    color:#00bcd4;
-    border-bottom: 5px solid #347594;
+nav a:hover{
+    color: #000;
 }
 
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
 
 /*This is the showcase*/
 .showcase::after{
@@ -235,6 +280,47 @@ body{
     outline: none;
     resize: none;
 }
+/*Footer CSS*/
+
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    text-decoration: none;
+    background-color: #E5EFF1;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #347594;
+}
+  
+footer ul li a:hover {
+    opacity: 50%;
+    color: #347594;
+}
+
 @media screen and (max-width: 800px){
     .container .contactInfo{
        border-right: none; 
