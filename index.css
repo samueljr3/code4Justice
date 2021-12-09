@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'sora';
@@ -110,7 +111,22 @@ hr{
     margin-bottom: 2em;
 }
 
+.learnMore{
+    border:none;
+    background-color: #347594;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.learnMore a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
 /*Body CSS*/
+h2{
+    color:#347594;
+}
 .main-body{
     padding-top: 1em;
     display: flex;
