@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-
-
+body {
+    font-family: 'Sora';
+  }
 
 .navContainer{
     width: 80%;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 header{
@@ -76,6 +76,26 @@ h1{
   text-align: center;
 }
 
+.programs{
+  padding: 20px;
+}
+
+.esltxt{
+  padding: 20px;
+}
+
+.edutxt{
+  padding: 20px;
+}
+
+.legaltxt{
+  padding: 20px;
+}
+
+.housingtxt{
+  padding: 20px;
+}
+
 h3{
   text-align: center;
 }
@@ -89,7 +109,7 @@ p{
   background-image: url("https://cdn.britannica.com/57/102257-050-AD29F06D/Project-Literacy-adult-education-course-Watertown-Mass.jpg");
 
   /* Set a specific height */
-  min-height: 350px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -103,7 +123,7 @@ p{
   background-image: url("https://www.brown.edu/sites/g/files/dprerj316/files/styles/wide_lrg/public/2019-07/education.jpg?h=8fda29ac&itok=oBowcOPR");
 
   /* Set a specific height */
-  min-height: 350px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -117,11 +137,81 @@ p{
   background-image: url("https://ktla.com/wp-content/uploads/sites/4/2020/11/33757ee062f8444c9773f822e0afb72e.jpg?w=2560&h=1440&crop=1");
 
   /* Set a specific height */
-  min-height: 350px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("https://m.foolcdn.com/media/millionacres/original_images/attorney.jpg?crop=16:9,smart");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 {
+  /* The image used */
+  background-image: url("https://www.mercyhousing.org/wp-content/uploads/2019/02/mercy-housing-southeast-header.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Footer CSS*/
+
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 3em;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #347594;
+}
+  
+footer ul li a:hover {
+    opacity: 50%;
+    color: #347594;
 }
