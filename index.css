@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'sora';
   }
@@ -83,6 +88,7 @@ nav a:hover::before{
 
 .hero-title{
     position: absolute;
+    text-shadow: 2px 2px 5px black;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -91,7 +97,7 @@ nav a:hover::before{
     color: white;
     /*check to see if font weight needed*/
     text-transform: uppercase;
-
+    
 }
 
 .hero-title h1{
@@ -105,7 +111,22 @@ hr{
     margin-bottom: 2em;
 }
 
+.learnMore{
+    border:none;
+    background-color: #347594;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.learnMore a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
 /*Body CSS*/
+h2{
+    color:#347594;
+}
 .main-body{
     padding-top: 1em;
     display: flex;
@@ -114,10 +135,13 @@ hr{
     justify-content: center;
 }
 .index-text{
-    padding:0 4em 0 4em;
+    padding:0 5em 0 5em;
+    color: #0c4159;
+    line-height: 2;
+    
 }
 .index-image{
-    padding-left: 2em ;
+    padding-left: 6em ;
 
     width:300px;
     height: auto;

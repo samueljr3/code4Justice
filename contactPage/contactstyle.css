@@ -1,91 +1,92 @@
 body{
+    color: #e5eff1;
+    font-family: 'Sora';
+}
+*{
     margin: 0;
     padding: 0;
-    color: #e5eff1;
-    font-family: sans-serif;
-}
-/*Navigation Bar style*/ 
-.logo{
-    float: left;
-    padding-left: 100px;
-    padding-bottom: 20px
-}
-.main-nav{
-    display: inline-block;
-    text-align: right;
-    width: 100%;
-    vertical-align: middle;
 }
 
-/* got rid of margin and padding in order to reset width of main nav*/
-.mian-nav__item{
-    padding: 0;
+  h2{
+      text-align: center; 
+  }
+
+ /*NAV bar code*/
+.navContainer{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header{
+    background: #E5EFF1;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear:  both;
+}
+.logo{
+    float:left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.main-nav__item {
+nav li{
     display: inline-block;
-    margin: 0 16px;
+    margin-left: 70px;
+    padding-top: 29px;
+
+    position: relative;
 }
 
-.main-nav__item a{
+nav a{
+    color:#0073aa;
     text-decoration: none;
-    color: #347594;
-    font-weight: bold;
-    padding: 3px 0;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-/*pseduo class*/
-.main-nav__item a:hover, .main-nav__item a:active {
-    color:#00bcd4;
-    border-bottom: 5px solid #347594;
+nav a:hover{
+    color: #000;
 }
 
-
-/*This is the showcase*/
-.showcase::after{
+nav a::before{
     content: '';
-    height: 100vh;
-    width: 100%;
-    background-image: url(unity.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: all 1000ms;
-}
-.showcase:hover::after{
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}
-
-.showacse:hover .content{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
-.content{
+    height: 5px;
+    background-color: #444;
     position: absolute;
-    z-index: 1;
-    top: 10%;
-    width: 100%;
-    transition: all 1000ms;
-}
-/*1rem =16px*/
-.content .title{
-    font-size: 2.2rem;
-    margin-top: 1rem;
-    color: #0c4159;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
 }
 
-.content .text{
-    line-height: 30px;
-    margin-top: 1rem;
+nav a:hover::before{
+    width:100%;
+}
+/*this is the showacse*/
+.content{
     color: #0c4159;
-    font-size: 30px;
-    text-align: left;
+    line-height: 40px;
+}
+/*This is the header and Calendar par*/
+.calendar{
+    padding-top: 30px;
+}
+.title{
+    color: #0c4159;
+    text-align: center;
 }
 /*Month Header*/
 .month{
@@ -153,22 +154,22 @@ body{
     color: blue;
 }
 
-/*this is the contact part*/
+
+/* This is the Contact Page*/
+
 .contact{
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5eff1;
+    grid-template-rows: 1fr;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 .container{
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .container .contactInfo{
     width: 50%;
@@ -186,7 +187,7 @@ body{
 .container .contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
-    background:#0c4159;
+    background:#347594;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +199,7 @@ body{
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: black;
+    color: #0c4159;
     flex-direction: column;
     font-weight: 300;
 }
@@ -207,17 +208,18 @@ body{
     color: #00bcd4;
 }
 .contactform{
+    grid-column-start: col-start 1;
     width: 50%;
     padding: 40px;
-    background-color: #0c4159;
+    background-color: #e5eff1;
 }
 .contactform h2{
     font-size: 30px;
-    color:white;
+    color: black;
     font-weight: 500;
 }
 .contactform label{
-    color:white;
+    color: black;
 }
 .contactform .inputbox{
     position: relative;
@@ -234,6 +236,65 @@ body{
     outline: none;
     resize: none;
 }
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+@media(Max-width: 600px){
+    .contact{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        border-right: none;
+    }
+}
+/*Footer CSS*/
+
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    text-decoration: none;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #347594;
+}
+  
+footer ul li a:hover {
+    opacity: 50%;
+    color: #347594;
+}
+
 @media screen and (max-width: 800px){
     .container .contactInfo{
        border-right: none; 
